@@ -15,7 +15,6 @@ class MyBeerList extends Component {
     }
 
     deleteBeer = (event) => {
-        console.log(this.props.beer.id)
         fetch(`${APIURL}/api/beerhad/delete/${this.props.beer.id}`, {
           method: 'DELETE',
           body: JSON.stringify({ mybeershad: { id: this.props.beer.id } }),
@@ -45,7 +44,7 @@ class MyBeerList extends Component {
                     <hr/>
                     <ModalHeader style={headerStyle}>
                     <Button style={closeButton} onClick={this.toggle}>X</Button>
-                        <h2>{beer.beername}</h2>
+                        <p style={pStyle2}>{beer.beername}</p>
 
                     </ModalHeader>
                     <hr/>
@@ -106,5 +105,10 @@ const closeButton = {
 
 const headerStyle = {
     display:'inline',
+}
 
+const pStyle2 = {
+    color:'white',
+    fontSize:'150%',
+    fontWeight:'heavy',
 }

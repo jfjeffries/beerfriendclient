@@ -121,7 +121,7 @@ class Homepage extends Component{
         if(this.state.searchedBeers){
             return(
                 Object.keys(this.state.searchedBeers).map((index, key) => 
-                    <BeerResults key={key} beer = {this.state.searchedBeers[index]} fetchMyBeers={this.props.fetchMyBeers} toggle2={this.props.toggle}/>)
+                    <BeerResults key={key} beer = {this.state.searchedBeers[index]} fetchMyBeers={this.fetchMyBeers} />)
             )
         } else {
             return(

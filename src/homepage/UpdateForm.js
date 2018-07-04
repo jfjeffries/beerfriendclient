@@ -25,7 +25,6 @@ ratingUpdate = (rating) => {
         myrating:this.state.myrating
     }}
 
-    console.log(updatedData)
     fetch(`${APIURL}/api/beerhad/update/${this.props.beername}`, {
          method: 'PUT',
          body: JSON.stringify(updatedData),

@@ -52,7 +52,7 @@ class AddBeer extends Component {
                     <hr/>
                     <ModalHeader>
                     <Button style={closeButton} onClick={this.toggle}>X</Button>
-                        <h2>Please enter as much as you can.</h2>
+                        <p style={pStyle2}>Please enter as much as you can.</p>
 
                     </ModalHeader>
                     <hr/>
