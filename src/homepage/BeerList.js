@@ -52,7 +52,7 @@ class BeerList extends Component {
                     <hr/>    
                     <ModalHeader style={headerStyle}>
                     <Button style={closeButton} onClick={this.toggle}>X</Button>
-                            <h2 style={hStyle}>{beer.beername}</h2>
+                            <p style={hStyle}>{beer.beername}</p>
                             
                         </ModalHeader>
                         <hr/>
@@ -117,6 +117,7 @@ const modalStyle = {
 
 const pStyle = {
     fontWeight:'heavy',
+    
 }
 
 const hStyle = {
