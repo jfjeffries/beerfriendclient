@@ -43,7 +43,7 @@ render(){
                     <Button style={buttonStyle} onClick={this.toggle}>{beer.beername}</Button>
                     <Modal style={modalStyle} isOpen={this.state.modal}>
                         <hr />   
-                        <ModalHeader >
+                        <ModalHeader style={headerStyle}>
                         <Button style={closeButton} onClick={this.toggle}>X</Button>
                         <p style={hStyle}>{beer.beername}</p>
                         </ModalHeader>
@@ -124,3 +124,6 @@ const inputFieldStyle = {
     width: '8em',
     height:'1.1em',
   }
+  const headerStyle = {
+    display:'inline',
+}

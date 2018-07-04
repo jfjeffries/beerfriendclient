@@ -105,7 +105,7 @@ class Homepage extends Component{
 
         return(
             <div style={wrapper}>
-                <SearchBeers allBeers={this.state.allBeers} fetchMyBeers={this.fetchMyBeers}/>
+                <SearchBeers fetchMyBeers={this.fetchMyBeers}/>
                 <div>
                     <AddBeer fetchBeerList={this.fetchBeerList}/> 
                 </div>

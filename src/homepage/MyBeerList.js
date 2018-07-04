@@ -24,7 +24,10 @@ class MyBeerList extends Component {
             'Authorization': localStorage.getItem("token")
           })
         })
-          .then((res) => this.props.fetchMyBeers()) 
+          .then((res) => {
+              this.props.fetchMyBeers()
+              this.toggle()
+          }) 
       }
 
     toggle (){
