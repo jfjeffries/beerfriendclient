@@ -20,6 +20,7 @@ class BeerList extends Component {
     }
 
     addThisBeer = () => {
+        console.log(this.props.beer)
         fetch(`${APIURL}/api/beerhad/addbeer`, {
             method: 'POST',
             body: JSON.stringify({ mybeershad:{
@@ -35,7 +36,6 @@ class BeerList extends Component {
         .then((res) => res.json())
         .then((logData) => {
             this.props.fetchMyBeers();
-            this.props.fetchBeerList();
             this.toggle();
         })
     }

@@ -98,7 +98,7 @@ class Homepage extends Component{
                         <hr/>
                     </div>
                     {Object.keys(this.state.allBeers).map((index, key) => 
-                    <BeerList key={key} beer={this.state.allBeers[index]} fetchBeerList={this.fetchBeerList} fetchMyBeers={this.fetchMyBeers}/>)}
+                    <BeerList key={key} beer={this.state.allBeers[index]} fetchMyBeers={this.fetchMyBeers} />)}
                     <hr />
                 </Container>
             )
