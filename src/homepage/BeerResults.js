@@ -31,9 +31,8 @@ class BeerResults extends Component {
         })
         .then((res) => res.json())
         .then((logData) => {
-            this.props.fetchMyBeers;
-            this.toggle;
-            this.props.toggle2
+            this.props.fetchMyBeers();
+            this.toggle();
         })
     }
 render(){
