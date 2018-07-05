@@ -205,7 +205,8 @@ const divStyle={
   padding:'1em',
   marginBottom:'4em',
   minHeight:'12em',
-  maxHeight:'50em'
+  maxHeight:'25em',
+  overflowY:'auto'
 }
 
 const hStyle = {

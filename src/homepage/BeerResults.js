@@ -104,9 +104,9 @@ const modalStyle = {
 }
 
 const hStyle = {
+    color:'white',
+    fontSize:'150%',
     fontWeight:'heavy',
-    margin:'auto',
-    width:'10em',
     
 }
 const closeButton = {

@@ -85,5 +85,6 @@ const mainDivStyle={
     height:'100%',
     backgroundColor: 'gray',
     backgroundSize:'cover',
-    position:'fixed',
+    // position:'absolute',
+    // maxHeight:'1200px'
 }

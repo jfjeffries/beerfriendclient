@@ -16,6 +16,7 @@ const footerStyle = {
     height:'5em',
     color:'white',
     backgroundColor:'black',
+    // position:'fixed',
 }
 const pStyle={
     marginLeft:'1.5em',

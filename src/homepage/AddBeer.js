@@ -52,7 +52,7 @@ class AddBeer extends Component {
                     <hr/>
                     <ModalHeader>
                     <Button style={closeButton} onClick={this.toggle}>X</Button>
-                        <p style={pStyle2}>Please enter as much as you can.</p>
+                        <p style={pStyle2}>Fill out fields</p>
 
                     </ModalHeader>
                     <hr/>
@@ -60,27 +60,27 @@ class AddBeer extends Component {
                         <Form style={formStyle} onSubmit={this.handleSubmit}>
                             <Row style={rowStyle}>
                                 <Label style={labelStyle} for="beername">Beer name:</Label>
-                                <Input style={inputFieldStyle} type="text" name="beername" onKeyUp={this.handleKeyUp}/>
+                                <Input style={inputFieldStyle} type="text" name="beername" required onKeyUp={this.handleKeyUp}/>
                             </Row>
                             <br/>
                             <Row style={rowStyle}>
                                 <Label style={labelStyle} for="brewery">Brewery:</Label>
-                                <Input style={inputFieldStyle} type="text" name="brewery" onKeyUp={this.handleKeyUp}/>
+                                <Input style={inputFieldStyle} type="text" name="brewery" required onKeyUp={this.handleKeyUp}/>
                             </Row>
                             <br/>
                             <Row style={rowStyle}>
                                 <Label style={labelStyle} for="brewedin:">Location:</Label>
-                                <Input style={inputFieldStyle} type="text" name="brewedin" onKeyUp={this.handleKeyUp}/>
+                                <Input style={inputFieldStyle} type="text" name="brewedin" required onKeyUp={this.handleKeyUp}/>
                             </Row>
                             <br/>
                             <Row style={rowStyle}>
                                 <Label style={labelStyle} for="styleof">Style:</Label>
-                                <Input style={inputFieldStyle} type="text" name="styleof" onKeyUp={this.handleKeyUp}/>
+                                <Input style={inputFieldStyle} type="text" name="styleof" required onKeyUp={this.handleKeyUp}/>
                             </Row>
                             <br/>
                             <Row style={rowStyle}>
                                 <Label style={labelStyle} for="abv">ABV:</Label>
-                                <Input style={inputFieldStyle} type="text" name="abv" onKeyUp={this.handleKeyUp}/>
+                                <Input style={inputFieldStyle} type="text" name="abv" required onKeyUp={this.handleKeyUp}/>
                             </Row>
                             <br/>
                             <div><Button style={submitStyle} type="submit">Submit</Button></div>
