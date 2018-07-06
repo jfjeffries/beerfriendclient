@@ -11,18 +11,6 @@ export default class Navi extends Component {
         }
     }
 
-    toggleNavbar = () => {
-        this.setState({
-          collapsed: !this.state.collapsed
-        });
-        console.log(this.state.collapsed)
-      }
-    toggle = () => {
-        this.setState({
-            modal:!this.state.modal
-        })
-    }
-
     render(){
         return(
             <div>
